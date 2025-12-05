@@ -1,6 +1,6 @@
 // Lógica para verificar código y cambiar contraseña
 
-const API_URL = 'http://localhost:8081/api/Recuperar';
+const API_URL = 'https://techstorepro-67te.onrender.com/api/Recuperar';
 
 document.addEventListener('DOMContentLoaded', () => {
     // Obtener email guardado

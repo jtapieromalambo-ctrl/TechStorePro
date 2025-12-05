@@ -3,7 +3,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     console.log('✅ pagina cargada correctamente - Sistema listo')
 
-    const API_URL = "http://localhost:8081/api/login"
+    const API_URL = "https://techstorepro-67te.onrender.com/api/login"
 
     document.getElementById('login-form').addEventListener('submit', async function (e) {
         e.preventDefault()

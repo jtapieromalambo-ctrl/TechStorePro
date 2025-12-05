@@ -3,7 +3,7 @@
 async function cargarProductos() {
     
     try {
-        const response=await fetch('http://localhost:8081/api/productos');
+        const response=await fetch('https://techstorepro-67te.onrender.com/api/productos');
         const productos=await response.json();
 
 

@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     let usuario = null;
 
     try {
-        const res = await fetch("http://localhost:8081/api/perfil/obtener", {
+        const res = await fetch("https://techstorepro-67te.onrender.com/api/perfil/obtener", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ email: perfil.correo })

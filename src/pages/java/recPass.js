@@ -1,7 +1,7 @@
 // pages/recuperar-password.js
 // Lógica para solicitar código de recuperación
 
-const API_URL = 'http://localhost:8081/api/recuperar';
+const API_URL = 'https://techstorepro-67te.onrender.com/api/recuperar';
 
 document.addEventListener('DOMContentLoaded', () => {
     const btnEnviarCodigo = document.getElementById('enviar-code');

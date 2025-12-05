@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded",()=>{
             password: document.getElementById("password").value
         }
         try {
-            const res = await fetch( "http://localhost:8081/api/User/register",{
+            const res = await fetch( "https://techstorepro-67te.onrender.com/api/User/register",{
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(data),
