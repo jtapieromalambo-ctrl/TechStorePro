@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil</title>
+  <link rel="stylesheet" href="../style/output.css">
+</head>
+
+<body class="bg-gray-50 font-sans ">
+  <header class="bg-white shadow-lg sticky top-0 z-50">
+    <nav class="container mx-auto px-4 py-4 ">
+      <div class="flex justify-between items-center ">
+        <!--Logo mejorado coherente con carrito.html-->
+        <div class="flex items-center">
+          <div class="bg-linear-to-r from-blue-600 to-purple-600 text-white px-3 py-2 rounded-lg mr-3">
+            <svg class="w-6 h-6 fill=" currentColor viewBox="0 0 20 20">
+              <path
+                d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1
+                            1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z">
+            </svg>
+
+          </div>
+          <h1 class="text-2xl font-bolde bg-linear-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <a href="../pages/index.html">TechStorePro</a>
+          </h1>
+        </div>
+        <div class="flex gap-2">
+          <a href=""
+            class="p-1 border-2 border-linear-to-r from-blue-600 to-purple-600 h-10 w-28 rounded-xl text-blue-600 flex justify-center items-center hover:scale-105 hover:duration-125 hover:bg-blue-50 ">
+            Ver Carrito
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+            </svg>
+
+          </a>
+
+
+          <a href="./"
+            class="gap-2 bg-linear-to-r from-blue-600 to-purple-600 h-10 w-20 rounded-xl text-white flex justify-center items-center hover:scale-105 hover:duration-125">
+            Atras
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3" />
+            </svg>
+          </a>
+
+        </div>
+
+      </div>
+    </nav>
+  </header>
+  <!--contenedor principla-->
+
+  <div class="min-h-screen bg-gray-100 flex items-center justify-center p-6">
+  <div class="bg-white w-full max-w-4xl rounded-2xl shadow p-8">
+
+    <!-- Perfil -->
+    <div class="flex items-center gap-4">
+      <!-- Avatar -->
+      <div class="w-20 h-20 rounded-full flex items-center justify-center 
+                  bg-gradient-to-r from-blue-500 to-purple-500 text-white text-3xl font-bold">
+        <span id="user-avatar"></span>
+      </div>
+
+      <div>
+        <h1 class="text-2xl font-semibold" id="user-name">
+        </h1>
+        <p class="text-gray-500" id="user-email"></p>
+      </div>
+    </div>
+
+ 
+
+    <!-- Formulario -->
+    <form class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+      
+      <!-- Nombre -->
+      <div>
+        <label class="block mb-1 font-medium">Nombre</label>
+        <input 
+          type="text" 
+          class="w-full border-2 border-gray-300 rounded-xl px-4 py-2 bg-gray-100 focus:outline-none focus:border-2 focus:border-blue-600"
+        >
+      </div>
+
+      <!-- Apellido -->
+      <div>
+        <label class="block mb-1 font-medium">Apellido</label>
+        <input 
+          type="text"
+          class="w-full border-2 border-gray-300 rounded-xl px-4 py-2 bg-gray-100 focus:outline-none focus:border-2 focus:border-blue-600"
+        >
+      </div>
+
+      <!-- Correo -->
+      <div class="md:col-span-2">
+        <label class="block mb-1 font-medium">Correo Electrónico</label>
+        <input 
+          type="email"
+          class="w-full border-2 border-gray-300 rounded-xl px-4 py-2 bg-gray-100 focus:outline-none focus:border-2 focus:border-blue-600"
+        >
+      </div>
+
+      <!-- Teléfono -->
+      <div class="md:col-span-2">
+        <label class="block mb-1 font-medium">Teléfono</label>
+        <input 
+          type="tel"
+          class="w-full border-2 border-gray-300 rounded-xl px-4 py-2 bg-gray-100 focus:outline-none focus:border-2 focus:border-blue-600"
+        >
+      </div>
+
+      <!-- Botón -->
+      
+
+    </form>
+    <div class="flex text-center mt-8 items-center">
+        <a href="./edit-perfil.html" class="w-full py-3 text-white font-semibold rounded-xl 
+                 bg-linear-to-r from-blue-500 to-purple-500 hover:scale-101 hover:transition hover::cursor-pointer">
+          Editar Perfil
+      </a>
+    </div>
+    <div class="flex text-center mt-2 items-center">
+        <a href="#" class="w-full py-3 text-white font-semibold rounded-xl 
+                 bg-linear-to-r from-red-600 to-red-400 hover:scale-101 hover:transition hover::cursor-pointer">
+          Eliminar
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<script src="../pages/java/pagPerfil.js"></script>
+
+</body>
+
+</html>

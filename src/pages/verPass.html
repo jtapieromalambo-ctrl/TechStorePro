@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style/output.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="bg-white  sticky top-0 z-50">
+    <nav class="container mx-auto px-4 py-4 ">
+      <div class="flex justify-between items-center ">
+        <!--Logo mejorado coherente con carrito.html-->
+        <div class="flex items-center">
+          <div class="bg-linear-to-r from-blue-600 to-purple-600 text-white px-3 py-2 rounded-lg mr-3">
+            <svg class="w-6 h-6 fill=" currentColor viewBox="0 0 20 20">
+              <path
+                d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1
+                            1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z">
+            </svg>
+
+          </div>
+          <h1 class="text-2xl font-bolde bg-linear-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <a href="../pages/index.html">TechStorePro</a>
+          </h1>
+        </div>
+        <div class="flex gap-2"></div>
+
+
+        <a href="./login.html"
+          class="gap-2 text-blue-600 h-10 w-40 rounded-xl flex justify-center items-center hover:scale-105 hover:duration-125">
+          Volver al login
+        </a>
+
+      </div>
+
+      </div>
+    </nav>
+  </header>
+  <main class="flex flex-items-center justify-center px-4 py-12 bg-linear-to-br from-blue-50 via-white to-purple-50">
+    <div class="w-full max-w-md animate-fade-in">
+
+      <!-- Card principal del login -->
+      <div class="bg-white rounded-2xl shadow-2xl p-6 border border-gray-100">
+
+        <!-- Título y descripción -->
+        <div class="text-center mb-8">
+          <div
+            class="inline-flex items-center justify-center w-16 h-16 bg-linear-to-r from-green-700 to-green-500 rounded-full mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-10 text-white">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+            </svg>
+
+          </div>
+          <h1 class="text-3xl font-bold text-gray-900 mb-2">Verificar Codigo</h1>
+          <p <span class="text-gray-400" id="profile-email"></span></p>
+        </div>
+
+        <!-- Formulario de login -->
+
+        <div class="space-y-6">
+          <!-- Campo de correo -->
+          <div class="relative mb-4">
+            <label for="">Codigo de varificacion</label>
+            <input type="text" id="codigo-verificacion" name="verification_code" maxlength="6" inputmode="numeric"
+              autocomplete="one-time-code" class="mt-2 w-full h-16 text-center text-4xl tracking-[0.5rem] font-bold
+           border border-gray-300 rounded-xl bg-linear-to-r from-white to-purple-50
+           text-gray-900 placeholder-gray-400
+           focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="000000" required> </div>
+            <p id="email-error" class="mt-1 text-sm text-red-500 hidden"></p>
+            <div>
+              <label for="" class="mt-4 block text-sm font-medium text-gray-700 mb-2">Nueva Contraseña</label>
+              <div class="relative">
+                <input id="password"  type="password" placeholder="Ingresar nueva contraseña"
+                  autocomplete="new-password" class="w-full px-3 py-2 border border-gray-300 rounded-lg 
+           focus:ring-blue-500 focus:border-blue-500 
+           transition-all duration-200 text-gray-900" />
+              </div>
+              <div>
+                <label for="" class="mt-4 block text-sm font-medium text-gray-700 mb-2">Confirmar Contraseña</label>
+                <div class="relative">
+                  <input id="password-confirm"  type="password" placeholder="Ingresar nueva contraseña"
+                    autocomplete="new-password" class="w-full px-3 py-2 border border-gray-300 rounded-lg
+           focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 text-gray-900" />
+                </div>
+              </div>
+            </div>
+
+
+
+            <!-- Mensaje de error general -->
+            <div id="login-error" class="hidden bg-red-50 border border-red-200 text-red-600 px-4 py-3 rounded-lg">
+              <div class="flex items-center">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 9v2m0 4h.01M12 5a7 7 0 11-7 7a7 7 0 017-7z" />
+                </svg>
+                <span id="login-error-message"></span>
+              </div>
+            </div>
+
+            <!-- Botón de inicio de sesión -->
+            <button type="submit" id="cambio-contraseña"
+              class=" mt-4 w-full py-2 px-4 bg-linear-to-r from-green-700 to-green-500 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all">
+              Cambiar Contraseña
+            </button>
+          </div>
+
+
+
+
+      </div>
+    </div>
+  </main>
+</body>
+<script src="../pages/java/verPass.js"></script>
+<script src="../pages/java/perfil.js"></script>
+
+</html>

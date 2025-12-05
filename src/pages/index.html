@@ -19,17 +19,19 @@
                         </svg>
 
                     </div>
+
+
 <h1 class="text-2xl font-bolde bg-linear-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
 <a href="../pages/index.html">TechStorePro</a>
 </h1>
                 </div>
                 <!-- menu .html -->
                  <div class="hidden md:flex space-x-6">
-                    <a href="index.html" class="text-gray-700 hover.text-blue-600 font-medium transition-colors duration-200 relative group">
+                    <a href="./index.html" class="text-gray-700 hover.text-blue-600 font-medium transition-colors duration-200 relative group">
                         Inicio
                         <span class="absolute -bottom-1 left-0 w-full h-0.5 bg-blue-600"></span>
                     </a>
-                    <a href="Productos.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group">
+                    <a href="./Productos.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group">
                         Productos
                         <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-200 group-hover:w-full"></span>
                     </a>
@@ -45,6 +47,7 @@
                  </div>
 <!-- Cart and Mobile Menu MEJORADOS -->
 <div class="flex items-center space-x-4">
+    <div id="user-menu-container"></div>
 <!-- ICONO DE CARRITO MEJORADO - coherente con carrito.html-->
  <a href="#" class="cart-icon relative group p-2.5 hover:bglinear-to-r hover:from-blue-50 hover:to-indigo-50 rounded-xl transition-all duration-300 transform hover:scale-105">
     <svg class="w-6 h-6 text-gray-700 group-hover:textblue-
@@ -54,6 +57,12 @@
 <!-- Contador con efecto pulso mejorado -->
 <span id="cart-counter" class="cart-counter-pulse absolute -top-2 -right-2 bg-linear-to-r from-red-500 via-pink-500 to-red-600 text-white text-xs font-bold rounded-full min-w-5 h-5 flex items-center justify-center px-1 shadow-lg border-2 border-white">0</span>
 </a>
+                    <!-- ICONO DE LOGIN – AGREGAR AQUÍ -->
+    <a href="login.html" id="icono-inicio" class="relative group p-2.5 hover:bg-linear-to-r hover:from-blue-50 hover:to-indigo-50 rounded-xl transition-all duration-300 transform hover:scale-105">
+    <svg class="w-6 h-6 text-gray-700 group-hover:text-blue-600 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+    </svg>
+    </a>
             </div>
         </div>
         </nav>
@@ -309,5 +318,6 @@ reservados.</p>
 </div>
 </div>
 </footer>
+<script src="../pages/java/perfil.js"></script>
 </body>
 </html>
