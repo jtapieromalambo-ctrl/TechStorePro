@@ -1,0 +1,9 @@
+[build]
+    command = "npm install && npm run build"
+    publish = "src"
+
+[{redirects}]
+
+    from = "/*"
+    to = "/page/index.html"
+    status = 200
