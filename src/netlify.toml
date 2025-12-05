@@ -2,7 +2,7 @@
     command = "npm install && npm run build"
     publish = "src"
 
-[{redirects}]
+[[redirects]]
 
     from = "/*"
     to = "/pages/index.html"
